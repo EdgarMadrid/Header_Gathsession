@@ -1,11 +1,12 @@
 import "./Navbar.scss";
+import logo from "/icons/GathSession.png";
 
 export function Navbar() {
   return `
     <nav class="navbar">
 
       <div class="navbar__logo">
-        <img src="/src/assets/icons/GathSession.png" alt="Logo" />
+        <img src="${logo}" alt="Logo" />
       </div>
 
       <button class="navbar__toggle" id="navbarToggle">☰</button>

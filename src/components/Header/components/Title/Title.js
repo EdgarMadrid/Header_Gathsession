@@ -1,4 +1,5 @@
 import "./Title.scss";
+import arrow from "/icons/Arrow.svg";
 
 export function Title() {
   return `
@@ -21,7 +22,7 @@ export function Title() {
 
         <a href="#" class="title__button title__button--secondary">
           Learn More
-          <img class="title__icon" src="/src/assets/icons/Arrow.svg" alt="">
+          <img class="title__icon" src="${arrow}" alt="">
         </a>
 
       </div>
