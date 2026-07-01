@@ -119,19 +119,19 @@ cd Header_Gathsession
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Run development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Build project:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ---
