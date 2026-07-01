@@ -14,7 +14,7 @@ Built with HTML, SCSS, JavaScript and Vite
 
 <p align="center">
 
-<a href="https://YOUR-DEMO-LINK.com">
+<a href="https://edgarmadrid.github.io/Header_Gathsession/">
 <img src="https://img.shields.io/badge/Live-Demo-6e40c9?style=for-the-badge&logo=vercel&logoColor=white">
 </a>
 
@@ -37,7 +37,7 @@ Built with HTML, SCSS, JavaScript and Vite
 ## 🔗 Demo
 
 <p align="center">
-<a href="YOUR-DEMO-LINK.com">
+<a href="https://edgarmadrid.github.io/Header_Gathsession/">
 View Live Demo →
 </a>
 </p>
