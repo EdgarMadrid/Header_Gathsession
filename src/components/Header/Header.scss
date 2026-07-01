@@ -1,0 +1,50 @@
+@use "@/styles/abstracts/breakpoints.scss" as md;
+
+.header {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  overflow: hidden; // evita que el fondo se salga
+  max-width: 1440px;
+  position: relative;
+  justify-self: center;
+
+  @include md.respond(lg) {
+    padding: 37px 10px 0 160px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 1px;
+      width: 600px;
+      height: 600px;
+      bottom: -130px;
+      right: -130px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      z-index: -1;
+
+      @include md.respond(xl) {
+        width: 650px;
+        height: 650px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 1px;
+      width: 400px;
+      height: 400px;
+      bottom: -130px;
+      right: -130px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      z-index: -1;
+
+      @include md.respond(xl) {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}

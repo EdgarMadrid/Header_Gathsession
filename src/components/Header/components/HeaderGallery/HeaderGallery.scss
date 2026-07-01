@@ -1,0 +1,62 @@
+@use "@/styles/abstracts/variables" as v;
+@use "@/styles/abstracts/breakpoints.scss" as md;
+
+.headerGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 180px 90px;
+  margin-top: 50px;
+  gap: 12px;
+  height: 420px;
+  width: 420px;
+  height: auto;
+
+  @include md.respond(sm) {
+    justify-self: center;
+  }
+  @include md.respond(lg) {
+    position: absolute;
+    right: 10px;
+    grid-template-rows: 150px 180px 150px;
+  }
+  @include md.respond(xl) {
+    width: 500px;
+  }
+
+  & :nth-child(1) {
+    background-color: v.$purple;
+    grid-row: span 2;
+  }
+  & :nth-child(2) {
+    background-color: v.$blue-light;
+    grid-row: span 1;
+  }
+  & :nth-child(3) {
+    background-color: v.$yellow;
+    grid-column: 3;
+    grid-row: span 3;
+    height: 68%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
+  & :nth-child(4) {
+    background-color: v.$orange;
+
+    grid-row: span 2;
+  }
+  & :nth-child(5) {
+    background-color: v.$primary;
+    grid-row: span 1;
+  }
+}
+
+.headerGallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 60px;
+  @include md.respond(lg) {
+    object-fit: cover;
+  }
+}

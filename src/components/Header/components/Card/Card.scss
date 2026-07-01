@@ -1,0 +1,51 @@
+@use "@/styles/abstracts/_variables" as v;
+@use "@/styles/abstracts/breakpoints.scss" as md;
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 60px;
+  text-align: center;
+  gap: 15px;
+  max-width: 420px;
+
+  @include md.respond(sm) {
+    justify-self: center;
+  }
+
+  @include md.respond(lg) {
+    margin-top: 144px;
+    justify-self: start;
+    font-size: 14px;
+  }
+
+  .card__item {
+    display: inline-flex;
+    gap: 6px;
+
+    .card__icon {
+      background-color: v.$white-op;
+      border-radius: 16px;
+      padding: 4px;
+      cursor: pointer;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+
+        border-color: rgba(255, 255, 255, 0.6);
+
+        box-shadow:
+          0 0 10px rgba(218, 219, 231, 0.4),
+          0 10px 25px rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .card__text {
+      text-align: start;
+    }
+  }
+}
